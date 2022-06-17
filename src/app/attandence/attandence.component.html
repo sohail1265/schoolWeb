@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <h3 class="heading pull-left">Attandence of Students</h3>
+    <button class="button pull-right">Add New</button>
+  </div>
+  <table class="table table-sm table-bordered">
+    <thead>
+      <tr>
+
+        <th scope="col">Roll no</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of attandenceData">
+        <td>{{item._id}}</td>
+        <td>{{item._id}}</td>
+        <td>{{item.date}}</td>
+        <td><button class="mx-2">delete</button>
+          <button>edit</button>
+        </td>
+      </tr>
+
+  </table>
+</div>

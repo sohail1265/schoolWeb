@@ -1,0 +1,7 @@
+.navbar{
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.nav-item{
+cursor: pointer;
+}

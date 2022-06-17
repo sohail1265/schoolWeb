@@ -1,0 +1,29 @@
+<div class="container">
+    <div>
+        <h3 class="heading pull-left">Students Record</h3>
+        <button class="button pull-right">Add New</button>
+    </div>
+    <table class="table table-sm table-bordered text-center">
+        <thead>
+          <tr>
+            <th scope="col">Roll no</th>
+            <th scope="col">Name</th>
+            <th scope="col">Father</th>
+            <th scope="col">Address</th>
+            <th scope="col">CLASS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let item of studentsData; let i=index">
+            <td>{{item.rollno}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.fathername}}</td>
+            <td>{{item.address}}</td>
+            <td>12th</td>
+            <td><button class="mx-2" (click)="deleteStudents(item._id, i)">delete</button>
+            <button>edit</button></td>
+          </tr>
+         
+      </table>
+</div>
+
